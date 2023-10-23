@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}   
+
+body{
+    background: rgba(181, 227, 224, 0.938);
+    font-family: 'Nunito', sans-serif;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+}
+
+.content{
+  padding: 20px;
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+}
+
+.image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image img{
+    max-width: 100%;  
+}
+
+.content h1{
+    font-size: 1rem;
+    margin-bottom: 10px;
+    border: red 1px solid
+}
+
+.content p{
+  font-size: 0.875rem;
+  margin-bottom: 10px;
+}
+
+label{
+    display: block;
+    font-size: 1rem;
+}
+
+
+
