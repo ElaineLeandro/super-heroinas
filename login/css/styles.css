@@ -16,10 +16,8 @@ body{
 
 .content{
   height: auto;
-  /* max-width: 434px; */
   margin-top: 1.5rem;
   padding: 20px;
-  background: #fff;
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   margin: 10px;
@@ -42,7 +40,6 @@ body{
 .content h1{
     font-size: 1rem;
     margin-bottom: 10px;
-    border: red 1px solid
 }
 
 .content p{
@@ -61,7 +58,7 @@ label{
     align-items: center;
     justify-content: center;
     width: 100%;
-    border: 1px solid red;
+   
 }
 
 .input-dados input{
@@ -72,10 +69,67 @@ label{
     padding: 9px;
     text-align: center;
     margin-bottom: 0.625rem;
+    background: #d0efeb;
 }
+
 
 .btn{
     height: 2.75rem;
     width: 100%;
     margin-top: 0.938rem;
+    background-color:  #d0efeb;
+    cursor: pointer;
+    border-radius: 5px;
 }
+
+/* Estilo quando o mouse passa por cima (hover) */
+input:hover, .btn:hover{
+    background-color:  #9bc5bf;
+   
+}
+
+/* Estilo quando o elemento está focado (focus) */
+input:focus, .btn:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    outline: none; /* Remove a borda padrão no foco do botão (pode variar de acordo com a preferência do design) */
+}
+
+
+/* Estilos para tablets e desktops (a partir de uma largura de tela de, por exemplo, 768px) */
+@media (min-width: 768px) {
+    .container {
+      flex-direction: row;
+      gap:30px;
+      padding: 20px;
+    }
+
+    h1{
+        font-size: 32px;
+    }
+  
+    .image {
+      width: 50%;
+      
+    }
+    .image img{
+        height: 100vh;
+        padding: 0;
+    }
+  
+    .content {
+      flex: 2;
+      width: 50%;
+      height: 100hv;
+      margin: 10px;
+      
+      
+    }
+  
+    .content h1 {
+      font-size: 1.5rem; /* Tamanho de fonte maior para telas maiores */
+    }
+  
+    /* Outros estilos para telas maiores */
+  }
+  
