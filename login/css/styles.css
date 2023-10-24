@@ -15,6 +15,9 @@ body{
 }
 
 .content{
+  height: auto;
+  /* max-width: 434px; */
+  margin-top: 1.5rem;
   padding: 20px;
   background: #fff;
   border-radius: 5px;
@@ -26,10 +29,14 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 10px;
+   
 }
 
 .image img{
     max-width: 100%;  
+    border-radius: 15px;
+    padding: 10px;
 }
 
 .content h1{
@@ -40,13 +47,35 @@ body{
 
 .content p{
   font-size: 0.875rem;
-  margin-bottom: 10px;
+  margin-bottom: 0.625rem;
 }
 
 label{
     display: block;
     font-size: 1rem;
+    width: 100%;
 }
 
+.input-dados{
+    display: block;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    border: 1px solid red;
+}
 
+.input-dados input{
+    height: 2.75rem;
+    width: 100%;
+    border: 1px solid ;
+    border-radius: 4px;
+    padding: 9px;
+    text-align: center;
+    margin-bottom: 0.625rem;
+}
 
+.btn{
+    height: 2.75rem;
+    width: 100%;
+    margin-top: 0.938rem;
+}
