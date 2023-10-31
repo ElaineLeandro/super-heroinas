@@ -28,6 +28,9 @@ body{
     justify-content: center;
     align-items: center;
     margin-top: 10px;
+    background-image: url('../assets/mulherr.jpg');
+    background-size: cover; /*Ajusta o tamanho da imagem para cobrir todo o elemento */
+    background-repeat: no-repeat; /*Impede a repetição da imagem de fundo */
    
 }
 
