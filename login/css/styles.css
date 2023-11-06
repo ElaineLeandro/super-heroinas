@@ -5,13 +5,14 @@
 }   
 
 body{
-    background: rgba(181, 227, 224, 0.938);
+    background: rgb(39 172 213 / 51%);;
     font-family: 'Nunito', sans-serif;
 }
 
 .container{
     display: flex;
     flex-direction: column;
+    height: 100vh;
 }
 
 .content{
@@ -28,16 +29,10 @@ body{
     justify-content: center;
     align-items: center;
     margin-top: 10px;
-    background-image: url('../assets/mulherr.jpg');
+    background-image: url('../assets/mulherMaravilha.jpg');
     background-size: cover; /*Ajusta o tamanho da imagem para cobrir todo o elemento */
-    background-repeat: no-repeat; /*Impede a repetição da imagem de fundo */
+    background-repeat: no-repeat !important; /*Impede a repetição da imagem de fundo*/
    
-}
-
-.image img{
-    max-width: 100%;  
-    border-radius: 15px;
-    padding: 10px;
 }
 
 .content h1{
@@ -72,35 +67,54 @@ label{
     padding: 9px;
     text-align: center;
     margin-bottom: 0.625rem;
-    background: #d0efeb;
+    background: #82c6d1;
 }
 
+.check{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    margin-top: 9px;
 
+}
+
+.checkbox{
+    display: flex;
+    gap:5px;
+}
+
+.check > a{
+    padding: auto;
+    width: max-content;
+    inline-size: max-content;
+    text-decoration: none;
+}
 .btn{
     height: 2.75rem;
     width: 100%;
     margin-top: 0.938rem;
-    background-color:  #d0efeb;
+    background-color:  #82c6d1;
     cursor: pointer;
     border-radius: 5px;
 }
 
 /* Estilo quando o mouse passa por cima (hover) */
 input:hover, .btn:hover{
-    background-color:  #9bc5bf;
+    background-color:  rgb(81, 152, 245);
    
 }
 
 /* Estilo quando o elemento está focado (focus) */
 input:focus, .btn:focus {
     border-color: #007bff;
-    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    box-shadow: 0 0 4px rgba(0, 123, 255, 0.5);
     outline: none; /* Remove a borda padrão no foco do botão (pode variar de acordo com a preferência do design) */
 }
 
 
-/* Estilos para tablets e desktops (a partir de uma largura de tela de, por exemplo, 768px) */
-@media (min-width: 768px) {
+/* Estilos para tablets e desktops (a partir de uma largura de tela de, por exemplo, 769px á 1024) */
+@media (min-width: 769px) and (max-width: 1024px){
     .container {
       flex-direction: row;
       gap:30px;
@@ -113,26 +127,50 @@ input:focus, .btn:focus {
   
     .image {
       width: 50%;
-      
+      border-radius: 5px;
+      margin: 10px;
     }
-    .image img{
-        height: 100vh;
-        padding: 0;
-    }
-  
+   
     .content {
       flex: 2;
       width: 50%;
       height: 100hv;
       margin: 10px;
-      
-      
     }
   
     .content h1 {
       font-size: 1.5rem; /* Tamanho de fonte maior para telas maiores */
     }
-  
-    /* Outros estilos para telas maiores */
+    
   }
   
+  @media (min-width: 1025px){
+    .container {
+      flex-direction: row;
+      gap:30px;
+      padding: 20px;
+      
+    }
+
+    h1{
+        font-size: 32px;
+    }
+  
+    .image {
+      width: 45%;
+      border-radius: 5px;
+      margin: 10px;
+    }
+  
+    .content {
+      flex: 2;
+      width: 45%;
+      height: 100hv;
+      margin: 10px;
+    }
+  
+    .content h1 {
+      font-size: 1.5rem; /* Tamanho de fonte maior para telas maiores */
+    }
+    
+  }
