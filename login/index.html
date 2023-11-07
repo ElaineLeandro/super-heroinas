@@ -9,7 +9,7 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Krona+One&family=Montserrat:wght@400;600&family=Nunito:wght@400;700&family=Open+Sans:wght@400;700&display=swap"
       rel="stylesheet"
     />
-    <title>Formúlario</title>
+    <title>Formúlario de Login</title>
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
@@ -17,12 +17,8 @@
       <section class="image" aria-label="Descrição da imagem de fundo">
         
       </section>
-      <form action="" class="content">
+      <form action="/login" class="content" id="loginForm" method="post">
         <h1>Bem-vinda às Super-Heroínas! Sua plataforma de quadrinhos</h1>
-
-        <section>
-          
-        </section>
 
         <p>Vamos começar com o seu e-mail</p>
         <section class="input-dados">
@@ -33,12 +29,17 @@
             id="email"
             placeholder="voce@gmail.com"
           />
+          <section id="email-error" class="error-message"></section>
+
           <label for="password">Senha</label>
           <input 
             type="password" 
             name="password"
             id="password"           
             />
+
+          <section id="password-error" class="error-message"></section>
+          
         </section>
         <section class="check">
           <section class="checkbox">
@@ -50,6 +51,7 @@
 
         <button class="btn">Entrar</button>
       </form>
+      <section id="success-message" class="success-message"></section>
     </div>
 
     <script src="./js/script.js"></script>

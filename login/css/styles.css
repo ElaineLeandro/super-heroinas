@@ -70,6 +70,21 @@ label{
     background: #82c6d1;
 }
 
+/* Estilize as mensagens de erro e sucesso */
+.error-message {
+  color: #ff0000; 
+  font-size: 0.875rem; 
+  font-weight: bold;
+  margin-top: 0.25rem; 
+}
+
+.success-message {
+  color: #008000; 
+  font-size: 0.875rem; 
+   font-weight: bold;
+  margin-top: 0.25rem; 
+}
+
 .check{
     display: flex;
     justify-content: space-between;
