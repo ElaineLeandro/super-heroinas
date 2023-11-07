@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', function(){
         }
          
         /** Se todas as validações passarem , exiba uma mensagem de sucesso */
-        successMessage.textContent = 'Login bem-sucedido! Agora você pode redirecionar para a próxima página ou executar a lógica de login adequada.'
+        successMessage.textContent = 'Login bem-sucedido!'
     });
 
     function isValidEmail(email){
